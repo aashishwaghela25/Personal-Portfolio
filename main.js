@@ -1,36 +1,34 @@
+// ===== DESGIN ===== //
+const words = ["Frontend Developer", "Web Developer"];
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
- // ===== DESGIN ===== //
- const words = ["Frontend Developer", "Web Developer"];
-    let wordIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
+function typeEffect() {
+  const textEl = document.getElementById("change-text");
+  const currentWord = words[wordIndex];
 
-    function typeEffect() {
-        const textEl = document.getElementById("change-text");
-        const currentWord = words[wordIndex];
+  if (!isDeleting) {
+    textEl.textContent = currentWord.substring(0, charIndex + 1);
+    charIndex++;
+  } else {
+    textEl.textContent = currentWord.substring(0, charIndex - 1);
+    charIndex--;
+  }
 
-        if (!isDeleting) {
-            textEl.textContent = currentWord.substring(0, charIndex + 1);
-            charIndex++;
-        } else {
-            textEl.textContent = currentWord.substring(0, charIndex - 1);
-            charIndex--;
-        }
+  if (!isDeleting && charIndex === currentWord.length) {
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    wordIndex = (wordIndex + 1) % words.length;
+  }
 
-        if (!isDeleting && charIndex === currentWord.length) {
-            isDeleting = true;     
-        }
-        else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-        }
+  setTimeout(typeEffect, isDeleting ? 100 : 120);
+}
 
-        setTimeout(typeEffect, isDeleting ? 100 : 120);
-    }
+typeEffect();
 
-    typeEffect();
-
-    // ===== HAMBURGER MENU ===== //
+// ===== HAMBURGER MENU ===== //
 const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.querySelector(".navbar");
 const navLinks = document.querySelectorAll(".navbar a");
@@ -46,3 +44,5 @@ for (let i = 0; i < navLinks.length; i++) {
     navbar.classList.remove("active");
   });
 }
+
+// ===== EMAIL ===== //

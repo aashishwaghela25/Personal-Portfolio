@@ -13,6 +13,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -21,7 +30,7 @@
       <a href="#" class="logo">Aashish.</a>
 
       <nav class="navbar">
-        <a href="#" class="active">Home</a>
+        <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -35,7 +44,7 @@
     </header>
 
     <!-- ===== HOME SECTION ===== -->
-    <section class="home">
+    <section class="home" id="home">
       <!-- ===== INTRO =====-->
       <div class="home-text">
         <h1>Hi, I'm <span>Aashish Waghela</span></h1>
@@ -134,9 +143,54 @@
     </section>
 
     <!-- ===== PROJECT ===== -->
-     <section class="" id="projects">
-      
-     </section>
+    <section class="projects" id="projects">
+      <h5>My<span>Projects</span></h5>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+      <h5>Contact <span>Me</span></h5>
+      <div class="con-box">
+        <p class="contat-text">
+          Feel free to reach out to me for collaboration, project work, or any
+          questions. I'll get back to you as soon as possible.
+        </p>
+
+        <div class="contact-container">
+          <!-- gmail Info -->
+          <div class="contact-info">
+            <div>
+              <i class="bx bxl-gmail"></i>
+              <span>aashishwaghela2505@gmail.com</span>
+            </div>
+            <!-- whatsapp number -->
+            <div>
+              <i class="bx bxl-whatsapp"></i>
+              <span>+91- 93215 88559</span>
+            </div>
+            <!-- Location -->
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <a
+                href="https://maps.app.goo.gl/Stt3eopWuZUAJZeY8"
+                target="_blank"
+                >Mumbai, India</a>
+            </div>
+          </div>
+
+          <!-- contact form -->
+          <form class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <a href="#top" class="icon"><i class="fa-solid fa-arrow-up"></i></a>
     <!-- JS -->
     <script src="main.js"></script>
   </body>

@@ -8,13 +8,12 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: #081b29;
 }
-
 
 /* =========================
    HEADER / NAVBAR
@@ -32,7 +31,6 @@ body {
   z-index: 100;
 }
 
-
 /* =========================
    LOGO
    ========================= */
@@ -42,7 +40,6 @@ body {
   font-weight: 600;
   animation: slideIn 1.2s ease-out;
 }
-
 
 /* Logo Animation */
 @keyframes slideIn {
@@ -55,7 +52,6 @@ body {
     transform: translateX(0);
   }
 }
-
 
 /* =========================
    NAVIGATION LINKS
@@ -77,12 +73,21 @@ body {
   display: flex;
 }
 
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 10%;
+}
+@media (max-width: 768px) {
+  section {
+    padding: 120px 5% 60px;
+  }
+}
 
 /* =========================
    HOME SECTION
    ========================= */
 .home {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +95,6 @@ body {
   background: #081b29;
   color: #ededed;
 }
-
 
 /* =========================
    HOME TEXT CONTENT
@@ -122,7 +126,6 @@ body {
   font-size: 20px;
 }
 
-
 /* =========================
    PROFILE IMAGE
    ========================= */
@@ -140,7 +143,6 @@ body {
   border: 4px solid #00abf0;
 }
 
-
 /* =========================
    HAMBURGER MENU
    ========================= */
@@ -150,7 +152,6 @@ body {
   cursor: pointer;
   font-size: 18px;
 }
-
 
 /* =========================
    RESPONSIVE DESIGN
@@ -230,7 +231,6 @@ body {
   }
 }
 
-
 /* =========================
         SOCIAL ICONS
    ========================= */
@@ -259,11 +259,10 @@ body {
   transform: scale(1.2);
 }
 
-
 /* =========================
        MORE ABOUT ME
    ========================= */
-  .more-about-me{
+.more-about-me {
   margin: 40px auto;
   max-width: 200px;
   padding: 25px 30px;
@@ -282,8 +281,8 @@ body {
   transition: 0.3s ease;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 /* =========================
@@ -300,11 +299,9 @@ html{
 .ab-box {
   max-width: 900px;
   padding: 35px 40px;
-
   background: rgba(0, 171, 240, 0.12);
   border: 1px solid #00abf0;
   border-radius: 14px;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   text-align: center;
   transition: 0.3s ease;
@@ -319,10 +316,10 @@ html{
   color: #00abf0;
 }
 
-.ab-box h4{
-    font-size: 30px;
-    color: #00abf0;
-    margin-top: 15px;
+.ab-box h4 {
+  font-size: 30px;
+  color: #00abf0;
+  margin-top: 15px;
 }
 
 .ab-box p {
@@ -336,7 +333,7 @@ html{
 /* =========================
           MY SKILLS 
    ========================= */
-.skills-t h5{
+.skills-t h5 {
   margin: 40px auto;
   margin-top: 100px;
   max-width: 200px;
@@ -351,11 +348,13 @@ html{
   border: 2px solid #00abf0;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
-.skills-t h5 span{
+.skills-t h5 span {
   color: #00abf0;
 }
 
-.skills-container{
+.skills-container {
+  margin-top: 100px;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
@@ -363,41 +362,202 @@ html{
   justify-items: center;
 }
 
-.skills-box{
+.skills-box {
   background: #00abf0;
   background: rgba(0, 171, 240, 0.12);
   border: 1px solid #00abf0;
   padding: 30px;
   max-width: 200px;
   border-radius: 12px;
-  color: #fff
+  color: #fff;
 }
 
-.skills-box h3{
+.skills-box h3 {
   color: #00abf0;
   margin-bottom: 15px;
   font-size: 25px;
 }
 
-.skills-box ul li{
+.skills-box ul li {
   margin: 8px 0;
   font-size: 20px;
 }
 
-.skills-box:hover{
+.skills-box:hover {
   transform: translateY(-8px);
-   box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.4);
 }
 
 /* Responsive */
 @media (max-width: 992px) {
-  .skills-container{
+  .skills-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 575px) {
-  .skills-container{
+  .skills-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* =========================
+        PROJECT 
+   ========================= */
+.projects h5 {
+  margin: 40px auto;
+  margin-top: 100px;
+  max-width: 200px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ededed;
+  font-size: 30px;
+  border-radius: 12px;
+  border: 2px solid #00abf0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.projects h5 span {
+  color: #00abf0;
+}
+
+/* =========================
+        CONTACT 
+   ========================= */
+.contact h5 {
+  margin: 40px auto;
+  margin-top: 100px;
+  max-width: 200px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ededed;
+  font-size: 30px;
+  border-radius: 12px;
+  border: 2px solid #00abf0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.contact h5 span {
+  color: #00abf0;
+}
+.con-box {
+  width: 100%;
+  max-width: 900px;
+  min-height: 500px;
+
+  margin: 0 auto;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+
+  border: 1px solid #00abf0;
+  border-radius: 14px;
+  background: rgba(0, 171, 240, 0.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  transition: 0.3s ease;
+}
+
+.con-box p {
+  margin-top: 20px;
+  font-size: 25px;
+  line-height: 1.8;
+  color: #dcdcdc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+
+.contact-info i {
+  font-size: 26px;
+  color: #ededed;
+}
+
+.contact-info span {
+  font-size: 18px;
+  color: #00abf0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: transparent;
+
+  border: 1px solid #00abf0;
+  border-radius: 8px;
+
+  color: #ededed;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 15px;
+  font-size: 18px;
+
+  background: transparent;
+  color: #ededed;
+
+  border: 2px solid #00abf0;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #00abf0;
+  color: #081b29;
+}
+
+/* =========================
+    Bottom to Top Arrow
+   ========================= */
+.icon {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  border-radius: 20px;
+  z-index: 3;
+  color: #00abf0;
+}
+.icon i {
+  padding: 10px 5px;
+  font-size: 1.9rem;
+}
+.location a{
+  color: #00abf0;
+  font-size: 18px;
+}
+.location a:hover{
+  color: #dcdcdc;
 }
