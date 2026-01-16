@@ -259,28 +259,6 @@ section {
   transform: scale(1.2);
 }
 
-/* =========================
-       MORE ABOUT ME
-   ========================= */
-.more-about-me {
-  margin: 40px auto;
-  max-width: 200px;
-  padding: 25px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ededed;
-  font-size: 20px;
-  border-radius: 12px;
-  border: 2px solid #00abf0;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-.more-about-me:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -554,10 +532,10 @@ html {
   padding: 10px 5px;
   font-size: 1.9rem;
 }
-.location a{
+.location a {
   color: #00abf0;
   font-size: 18px;
 }
-.location a:hover{
+.location a:hover {
   color: #dcdcdc;
 }
